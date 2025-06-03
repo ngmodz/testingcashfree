@@ -1,0 +1,28 @@
+{
+  "name": "cashfree-api-verifier",
+  "version": "1.0.0",
+  "description": "Node.js backend for Cashfree payment verification using API keys",
+  "main": "payment-verifier.js",
+  "scripts": {
+    "start": "node payment-verifier.js",
+    "dev": "nodemon payment-verifier.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "cashfree",
+    "api",
+    "payment",
+    "verification",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
