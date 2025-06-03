@@ -1,6 +1,9 @@
 // Payment handling utilities for Cashfree integration
 
-const API_BASE_URL = 'http://localhost:3001';
+// Configuration - Auto-detect environment
+const API_BASE_URL = typeof window !== 'undefined' && window.location.hostname === 'localhost'
+  ? 'http://localhost:3001'  // Local development
+  : '';  // Production (Vercel) - use relative URLs
 
 // Generate unique order ID
 export function generateOrderId() {
